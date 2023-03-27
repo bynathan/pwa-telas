@@ -1,0 +1,309 @@
+.checkout{
+    display: flex;
+    flex-direction: column;
+    max-width: 1170px;
+    margin: 30px auto 69px auto;
+    &__logo{
+        height: 50px;
+        width: 154px;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+    &__header{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin: 15px 0 80px 0;
+        &__back{
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 0 45px 0;
+            svg{
+                stroke: #000;
+                height: 24px;
+                width: 24px;
+                transition: stroke .2s;
+            }
+            p{
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                color: #292F31;
+                margin: 0 0 0 8px;
+                transition: color .2s;
+            }
+            &:hover{
+                svg{
+                    stroke: #05CB95;
+                }
+                p{
+                    color: #05CB95;
+                }
+            }
+        }
+        &__more{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            &--title{
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 24px;
+                color: #292F31;
+                margin: 0 0 16px 0;
+            }
+            &--container{
+                display: grid;
+                grid-template-columns: 120px 120px 120px 120px 120px 120px 120px 120px;
+                column-gap: 29px;
+            }
+        }
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        &--title{
+            margin: 0 0 32px 0;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 39px;
+            color: #000000;
+        }
+        &__delivery{
+
+        }
+        &__order{
+            max-width: 477px;
+            h1{
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 24px;
+                color: #292F31;
+                margin: 0 0 16px 0;
+            }
+            &--itens{
+                display: flex;
+                flex-direction: column;
+                overflow-y: auto;
+                margin: 0 0 32px 0;
+                height: 346px;
+                &::-webkit-scrollbar{
+                    width: 0px;
+                }
+            }
+            &--summary{
+                background: #F9F9F9;
+                border-radius: 24px;
+                padding: 24px 20px;
+                display: flex;
+                flex-direction: column;
+                section{
+                    display: flex;
+                    justify-content: space-between;
+                    h2{
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #292F31;
+                        margin: 0 0 16px 0;
+                        width: unset;
+                    }
+                    p{
+                        width: unset;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #575757;
+                        margin: 0;
+                    }
+                    h1{
+                        width: unset;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 24px;
+                        color: #292F31;
+                        margin: 0;
+                    }
+                }
+                hr{
+                    border-top: #D5D5D5;
+                    margin: 16px 0 16px 0;
+                }
+            }
+        }
+    }
+}
+
+// START STYLE CARD SUGGESTIONS FOR YOU
+.checkout__header__more--itens{
+    height: 184px;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    cursor: pointer;
+    position: relative;
+    img{
+        height: 100px;
+        width: 100px;
+        margin: 0 0 0 5px;
+    }
+    p{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        color: #292F31;
+        margin: 0;
+        text-transform: capitalize;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        transition: color .2s, text-decoration .2s;
+        &:hover{
+            color: #05CB95;
+            text-decoration: underline;
+        }
+    }
+    h1{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        color: #292F31;
+        margin: 0px;
+    }
+    div{
+        position: absolute;
+        top: 16px;
+        right: 5px;
+        height: 35px;
+        width: 35px;
+        background: #05CB95;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background .2s;
+        &:hover{
+            background: #0AA77C;
+        }
+    }
+}
+// FIM STYLE CARD SUGGESTIONS FOR YOU
+
+// START STYLE CARD ORDER ITENS
+.checkout__content__order--itens{
+    .item{
+        border: 1px solid #D5D5D5;
+        border-radius: 24px;
+        padding: 16px 20px 16px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 110px;
+        margin: 0 0 8px 0;
+        &:last-child{
+            margin: 0;
+        }
+        img{
+            height: 56px;
+            width: 56px;
+        }
+        .info{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            max-width: 365px;
+            height: 100%;
+            p{
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                color: #292F31;
+                margin: 0;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+            .action{
+                display: flex;
+                align-items: center;
+                height: 24px;
+                h1{
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: #05CB95;
+                    margin: 0;
+                }
+                div{
+                    max-width: 112px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: end;
+                    .menos{
+                        height: 24px;
+                        width: 24px;
+                        cursor: pointer;
+                        stroke: #000;
+                        margin: 0 35px 0 0;
+                        transition: stroke .2s;
+                        &:hover{
+                            stroke: #05CB95;
+                        }
+                    }
+                    p{
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #292F31;
+                        margin: 0px;
+                        width: unset;
+                        cursor: default;
+                    }
+                    .mais{
+                        height: 14px;
+                        width: 14px;
+                        cursor: pointer;
+                        stroke: #000;
+                        margin: 0 0 0 35px;
+                        transition: stroke .2s;
+                        &:hover{
+                            stroke: #05CB95;
+                        }
+                    }
+                    .delete{
+                        height: 20px;
+                        width: 16px;
+                        cursor: pointer;
+                        fill: #000;
+                        margin: 0 35px 0 0;
+                        transition: fill .2s;
+                        &:hover{
+                            fill: #05CB95;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// FIM STYLE CARD ORDER ITENS
