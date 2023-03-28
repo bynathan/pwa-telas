@@ -103,7 +103,134 @@
   </div>
   <h1 class="checkout__content--title">Checkout</h1>
   <div class="checkout__content">
-    <div class="checkout__content__delivery"></div>
+    <div class="checkout__content__delivery">   
+      <h1>Como quer receber ?</h1>
+      <div class="checkout__content__delivery--form">
+        <div class="options">
+          <div>
+            <input type="radio" name="delivery" id="delivery">
+            <label for="delivery">Entrega</label>
+          </div>
+          <div>
+            <input type="radio" name="delivery" id="withdrawal">
+            <label for="withdrawal">Retirar</label>
+          </div>
+        </div>
+        <div class="address">
+          <div class="address__new">
+            <img src="../assets/imgs/checkout/map.png" alt="">
+            <div class="info">
+              <div>
+                <h1>Sem endereço</h1>
+                <h2>Adicione o endereço</h2>
+              </div>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>                
+            </div>
+          </div>
+          <div class="address__delivery">
+            <div class="action">
+              <p>Casa</p>
+              <a href="">
+                Editar
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.0514 3.00002L4.20976 10.2417C3.95142 10.5167 3.70142 11.0584 3.65142 11.4334L3.34309 14.1333C3.23476 15.1083 3.93476 15.775 4.90142 15.6084L7.58476 15.15C7.95976 15.0834 8.48476 14.8084 8.74309 14.525L15.5848 7.28335C16.7681 6.03335 17.3014 4.60835 15.4598 2.86668C13.6264 1.14168 12.2348 1.75002 11.0514 3.00002Z" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M9.90833 4.20801C10.083 5.32539 10.6238 6.35312 11.4458 7.12988C12.2679 7.90664 13.3245 8.38845 14.45 8.49967M2.5 18.333H17.5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                  
+              </a>
+            </div>
+            <p class="text">Avenida João Paulo de Cesas Marinho Alencar, 12458 Avenida João Paulo de Cesas Marinho Alencar, 12458 </p>
+            <h1>Bela vista</h1>
+            <div class="tag">
+              <p>endereço para entrega</p>
+            </div>
+          </div>
+          <div class="address__withdrawal">
+            <p class="text">Avenida João Paulo de Cesas Marinho Alencar, 12458 Avenida João Paulo de Cesas Marinho Alencar, 12458 </p>
+            <div>
+              <h1>Bela vista</h1>
+              <h2>Fecha as 00:00</h2>
+            </div>
+            <div class="tag">
+              <p>endereço para entrega</p>
+            </div>
+          </div>
+        </div>
+        <h2>Qual forma de pagamento?</h2>
+        <div class="payments">
+          <div class="payments__machine active"> <!--Class active para dar estilo de ativo-->
+            <div class="noactive">
+              <div>
+                <svg width="16" height="24" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.1999 3.60001V1.80001C15.1999 0.807586 14.27 0 13.1272 0H4.83623C3.69344 0 2.76349 0.807586 2.76349 1.80001V4.20008H1.38175C0.619748 4.20008 0 4.73829 0 5.40002L0.00138799 12.6335L0.655603 22.8668C0.696317 23.502 1.30242 24 2.03528 24H13.1635C13.8973 24 14.5024 23.502 14.5432 22.8666L15.1997 12.6004V5.40033C15.1997 4.73859 14.58 4.20039 13.818 4.20039H12.4362V3.60032L15.1999 3.60001ZM12.4364 1.80001C12.4364 1.46933 12.7459 1.19994 13.1274 1.19994C13.5089 1.19994 13.8184 1.46933 13.8184 1.80001V2.40008H12.4367L12.4364 1.80001ZM4.14547 1.80001C4.14547 1.46933 4.455 1.19994 4.83646 1.19994H11.1731C11.097 1.38777 11.0547 1.58927 11.0547 1.80001V6.00009L4.14595 5.99989L4.14547 1.80001ZM2.03454 22.7999L1.41965 13.1997H13.7785L13.1636 22.7999H2.03454ZM13.8183 5.40002L13.8197 11.9999H1.38213V5.40002H2.76387V7.20003H12.4364V5.40002H13.8183ZM9.67287 19.8001H11.0546V21H9.67287V19.8001ZM6.90914 19.8001H8.29089V21H6.90914V19.8001ZM6.90914 14.9999H8.29089V16.1998H6.90914V14.9999ZM6.90914 17.4H8.29089V18.5999H6.90914V17.4ZM9.67287 14.9999H11.0546V16.1998H9.67287V14.9999ZM9.67287 17.4H11.0546V18.5999H9.67287V17.4ZM4.14565 19.8001H5.5274V21H4.14565V19.8001ZM4.14565 14.9999H5.5274V16.1998H4.14565V14.9999ZM4.14565 17.4H5.5274V18.5999H4.14565V17.4ZM11.0544 8.39996H12.4361V10.8H11.0544V8.39996Z"/>
+                </svg>
+              </div>
+              <div>
+                <h1>Com maquininha</h1>
+                <h2>Na entrega ou retirada do seu pedido.</h2>
+              </div>
+            </div>
+            <div class="active">
+              <div>
+                <img src="../assets/imgs/checkout/dinheiro.png" alt="">
+                <h1>Visa</h1>
+              </div>
+              <div>
+                <p>Editar</p>
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_1575_1546)">
+                  <path d="M16.5 9C16.5 13.14 13.14 16.5 9 16.5C4.86 16.5 2.3325 12.33 2.3325 12.33M2.3325 12.33H5.7225M2.3325 12.33V16.08M1.5 9C1.5 4.86 4.83 1.5 9 1.5C14.0025 1.5 16.5 5.67 16.5 5.67M16.5 5.67V1.92M16.5 5.67H13.17" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_1575_1546">
+                  <rect width="18" height="18" fill="white"/>
+                  </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="payments__money active"> <!--Class active para dar estilo de ativo-->
+            <div class="noactive">
+              <div>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17 20.5H7C4 20.5 2 19 2 15.5V8.5C2 5 4 3.5 7 3.5H17C20 3.5 22 5 22 8.5V15.5C22 19 20 20.5 17 20.5Z" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M5.5 9.5V14.5M18.5 9.5V14.5M12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15V15Z" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+              </div>
+              <div>
+                <h1>Com dinheiro</h1>
+                <h2>Na entrega ou retirada do seu pedido.</h2>
+              </div>
+            </div>
+            <div class="active">
+              <div>
+                <img src="../assets/imgs/checkout/dinheiro.png" alt="">
+                <h1>Visa</h1>
+              </div>
+              <div>
+                <p>Editar</p>
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_1575_1546)">
+                  <path d="M16.5 9C16.5 13.14 13.14 16.5 9 16.5C4.86 16.5 2.3325 12.33 2.3325 12.33M2.3325 12.33H5.7225M2.3325 12.33V16.08M1.5 9C1.5 4.86 4.83 1.5 9 1.5C14.0025 1.5 16.5 5.67 16.5 5.67M16.5 5.67V1.92M16.5 5.67H13.17" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_1575_1546">
+                  <rect width="18" height="18" fill="white"/>
+                  </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <label>
+        <h1>Observações</h1>
+        <textarea type="text" class="checkout__content__delivery--observation" placeholder="ex: Bem gelado por favor... e cuidado com a embalagem..."></textarea>
+      </label>
+    </div>
     <div class="checkout__content__order">
       <h1>Itens do pedido</h1>
       <div class="checkout__content__order--itens">
@@ -210,6 +337,12 @@
           <h1>Total</h1>
           <h1>R$ 0,00</h1>
         </section>
+      </div>
+      <div class="checkout__content__order--clear">
+        <a href="">limpar itens do carrinho</a>
+      </div>
+      <div class="checkout__content__order--button">
+        <input type="button" value="confirmar e fazer o pedido">
       </div>
     </div>
   </div>
