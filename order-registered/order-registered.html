@@ -1,0 +1,25 @@
+<div class="order__registered">  
+    <img class="order__registered__logo" src="../../assets/logo.png" alt="">
+    <div class="order__registered__content">
+        <h1>Pedido registrado</h1>
+        <img src="../../assets/icons.png" alt="">
+        <p>Seu pedido <strong>#0000000</strong> está em nosso sistema, mas caso você ainda precise cancelar, clique no botão abaixo.</p>
+        <div class="order__registered__content--progressbar">
+            <div>
+              <div>
+                <progressbar [value]="55"></progressbar>
+                <div class="text">
+                    <p>Cancele esse pedido em até<strong> 0:32 </strong>s</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="order__registered__content--cancel">
+            <p>clique aqui para canelar</p>
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.3327 16.0001H19.3327M15.9993 29.3334C23.3633 29.3334 29.3327 23.3641 29.3327 16.0001C29.3327 8.63608 23.3633 2.66675 15.9993 2.66675C8.63535 2.66675 2.66602 8.63608 2.66602 16.0001C2.66602 23.3641 8.63535 29.3334 15.9993 29.3334Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16.666 20L20.666 16L16.666 12" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+    </div>    
+</div>
